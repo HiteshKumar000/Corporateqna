@@ -1,0 +1,60 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.add-question {
+  background-color: #515968;
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.single-info {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+input[type="text"] {
+  margin-top: 10px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+textarea {
+  margin-top: 10px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+
+.buttons {
+  float: right;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+button {
+  color: white;
+}
+
+.cancel {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkgrey;
+}
+
+.save {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #76618B;
+}
