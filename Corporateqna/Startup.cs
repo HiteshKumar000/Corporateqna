@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Corporateqna.Services;
+using AutoMapper;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using System;
 namespace Corporateqna
 {
     public class Startup
@@ -20,7 +22,12 @@ namespace Corporateqna
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllers();
+            services.AddTransient<IAnswerService, AnswerService>();
+            services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IQuestionService, QuestionService>();
+            services.AddAutoMapper();
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {

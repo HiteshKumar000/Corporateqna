@@ -10,25 +10,17 @@ using AutoMapper;
 
 namespace Corporateqna.Services
 {
-    public class QuestionService:IQuestionService
+    public class CategoryService : ICategoryService
     {
         private readonly IDbConnection db;
 
-        public QuestionService(IConfiguration configuration)
+        public CategoryService(IConfiguration configuration)
         {
             db = new SqlConnection(configuration.GetConnectionString("DefaultConnection"));
         }
-
-        public void AddQuestion()
+        public IEnumerable<Category> GetCategories()
         {
-            throw new NotImplementedException();
+            return db.Query<DataModels.Category>("SELECT * FROM Category").MapAllTo<IEnumerable<DataModels.Category>, Category>();
         }
-
-        public IEnumerable<Question> GetQuestions()
-        {
-
-            return db.Query<DataModels.Question>("SELECT * FROM Question").MapAllTo<IEnumerable<DataModels.Question>, Question>();
-        }
-
     }
 }

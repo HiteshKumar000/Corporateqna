@@ -10,7 +10,7 @@ using AutoMapper;
 
 namespace Corporateqna.Services
 {
-    public class UserService
+    public class UserService:IUserService
     {
         private readonly IDbConnection db;
 
