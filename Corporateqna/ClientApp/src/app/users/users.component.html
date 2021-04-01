@@ -31,10 +31,10 @@
       <div class=user-pic>
         <img src=asserts/img/changeuser.png>
       </div>
-      <div class=user-data>
-        <span class=user-name>John Doe</span>
-        <span class=user-designation>Senior Manager-Dev</span>
-        <span class=user-location>Product Development,Hyderabad</span>
+      <div class=user-data *ngFor='let currentUser of userList'>
+        <span class=user-name>{{currentUser.name}}</span>
+        <span class=user-designation>{{currentUser.designation}}</span>
+        <span class=user-location>{{currentUser.location}}</span>
         <div class=like-dislike>
           <button class="dislike">
             <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
@@ -44,9 +44,9 @@
           </button>
         </div>
       </div>
-      <div class=questions-asked>Questions Asked</div>
-      <div class=questions-answered>Questions Answered</div>
-      <div class=questions-solved>Questions Solved</div>
+      <div class=questions-asked>{{currentuser.questionsAsked}}Questions Asked</div>
+      <div class=questions-answered>{{currentuser.questionsAnswered}}Questions Answered</div>
+      <div class=questions-solved{{currentuser.questionsSolved}}>Questions Solved</div>
     </div>
     <div class=questions>
       <div class=user-pic>
