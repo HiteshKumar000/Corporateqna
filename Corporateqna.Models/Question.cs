@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Models
+namespace Corporateqna.Models
 {
     public class Question
     {
@@ -12,11 +12,11 @@ namespace Models
 
         public int NoOfAnswers;
 
-        public string Question;
+        public string question;
 
         public string Category;
 
-        public DateTime Date;
+        public string Date;
 
         public bool SolvedStatus;
 

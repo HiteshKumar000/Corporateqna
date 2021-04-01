@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Models
 {
-    public class Users
+    public class User
     {
         public int Id;
 

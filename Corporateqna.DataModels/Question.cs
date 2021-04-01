@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataModels
+namespace Corporateqna.DataModels
 {
-    public class Questions
+    public class Question
     {
         public int UserId;
 
@@ -12,7 +12,7 @@ namespace DataModels
 
         public int NoOfAnswers;
 
-        public string Question;
+        public string Questionn;
 
         public string Category;
 

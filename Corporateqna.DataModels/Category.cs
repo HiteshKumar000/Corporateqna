@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataModels
+namespace Corporateqna.DataModels
 {
-    class Categories
+    public class Category
     {
         public int Id;
 

@@ -27,7 +27,7 @@ namespace Corporateqna
             services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IQuestionService, QuestionService>();
-            services.AddAutoMapper();
+            services.();
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {

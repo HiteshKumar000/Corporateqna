@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Corporateqna.DataModels
+namespace Corporateqna.Models
 {
     public class User
     {

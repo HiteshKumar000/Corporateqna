@@ -8,8 +8,4 @@
     <PackageReference Include="AngularJS.Core" Version="1.8.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Corporateqna.Services\Corporateqna.Services.csproj" />
-  </ItemGroup>
-
 </Project>

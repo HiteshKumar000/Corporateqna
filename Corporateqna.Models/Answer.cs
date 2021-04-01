@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Corporateqna.DataModels
+namespace Corporateqna.Models
 {
     public class Answer
     {
@@ -12,7 +12,7 @@ namespace Corporateqna.DataModels
 
         public int Voting;
 
-        public string Answerr;
+        public string Solution;
 
     }
 }
